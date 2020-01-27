@@ -1,0 +1,15 @@
+<div class="conatiner auth-bg">
+  <div *ngIf="isLoginType; else elseBlock">
+    <app-login></app-login>
+  </div>
+  <ng-template #elseBlock>
+    <app-register></app-register>
+  </ng-template>
+</div>
+
+<div class="text">
+  {{ isLoginType ? "Don't have an account" : "already Register?" }}
+  <button class="btn btn-secondary" (click)="toggleIsLoginType()">
+    {{ isLoginType ? "Register" : "Login" }}
+  </button>
+</div>

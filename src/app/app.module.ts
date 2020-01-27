@@ -18,6 +18,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { ApplicationTrackerComponent } from './application-tracker/application-tracker.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { ApplicationTrackerComponent } from './application-tracker/application-t
     ContactUsComponent,
     FooterComponent,
     
-    ApplicationTrackerComponent
+    ApplicationTrackerComponent,
+    
+    AuthComponent
   ],
   imports: [
     BrowserModule,

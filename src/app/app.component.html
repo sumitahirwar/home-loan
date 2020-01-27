@@ -1,38 +1,38 @@
-
-<app-nav-bar></app-nav-bar>
-<div style="margin-top: 2.5rem;">
-  
-  <router-outlet>
-  </router-outlet>
+<!-- header and default margin -->
+<div *ngIf="authService.isLoggedIn">
+  <app-nav-bar></app-nav-bar>
+  <div style="margin-top: 2.5rem;"></div>
 </div>
+<router-outlet> </router-outlet>
+
 <!-- <app-home></app-home> -->
+<div *ngIf="authService.isLoggedIn">
   <app-footer></app-footer>
-
-
+</div>
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
-
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-       <app-upload-documents></app-upload-documents>
-
-        
+        <app-upload-documents></app-upload-documents>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Close
+        </button>
       </div>
-
     </div>
   </div>
 </div>

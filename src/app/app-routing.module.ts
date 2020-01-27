@@ -9,16 +9,16 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { ApplicationTrackerComponent } from './application-tracker/application-tracker.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: AuthComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'about', component: AboutUsComponent},
   {path: 'register', component: RegisterComponent},
   {path:'upload-documents',component:UploadDocumentsComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'footer',component:FooterComponent},
-  
   {path:'application-tracker',component:ApplicationTrackerComponent}
 ];
 

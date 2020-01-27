@@ -1,49 +1,52 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
-    <div class="container">
-      <img src="assets/photos/logo.png" alt="" height="40px" weight="20px">
-      <a class="navbar-brand" routerLink="/" routerLinkActive="active">Home-Loan</a>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Calculator</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/contact-us" routerLinkActive="active">Call-Back</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
-          </li>
-          <li  class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#myModal">Upload Documents</a>
-          </li >
-          <!-- <li class="nav-item" *ngIf="login">
-            <a class="nav-link" (click)="toggleLogin()">Login</a>
-          </li> -->
-          <li class="nav-item" >
-            <a class="nav-link" routerLink="/login" routerLinkActive="active" (click)="toggleLogin()">{{ login? 'Login': 'Sign Out'}}</a>
-          </li>
+  <div class="container">
+    <img src="assets/photos/logo.png" alt="" height="40px" weight="20px" />
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active"
+      >Home-Loan</a
+    >
 
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-        </ul>
-      </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active"
+            >About Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
+            >Call-Back</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#myModal"
+            >Upload Documents</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()">LogOut</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
     </div>
-  </nav>
-
-
-
-  
-  
+  </div>
+</nav>
