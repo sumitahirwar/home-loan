@@ -1,0 +1,82 @@
+
+<h1>Personal-Details</h1>
+<div id="form">
+    <form [formGroup]="addForm" (ngSubmit)="addCustomer()">
+
+        <label>Name</label><br>
+        <input type="text" size="35" formControlName="customerName" name="customerName" id="customerName">
+        <div *ngIf="submitted &&  addForm.get('customerName').invalid" class="error">
+            <div>Enter name is not valid</div>
+        </div>
+
+        
+        <br><br>
+        <label>Gender</label><br>
+        <select id="area" formControlName="gender" name="gender">
+
+            <option name="male">Male</option>
+            <option name="female">Female</option>
+            <option name="others">Others</option>
+        </select>
+        <div *ngIf="submitted &&  addForm.get('gender').invalid" class="error">
+            <div>gender is not valid</div>
+        </div>
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" size="35" formControlName="emailId" name="emailId" id="emailId"><br><br>
+        <div *ngIf="submitted &&  addForm.get('emailId').invalid" class="error">
+            <div>email id is not valid</div>
+        </div>
+        <br><br>
+
+
+
+        <label>Password</label><br>
+        <input type="password" size="35" formControlName="password" name="password" id="password"><br><br>
+        <div *ngIf="submitted &&  addForm.get('password').invalid" class="error">
+            <div>password is not valid</div>
+        </div>
+
+        <label>Mobile</label><br>
+        <input type="number" size="35" formControlName="phoneNo" name="phoneNo"><br><br>
+        <div *ngIf="submitted &&  addForm.get('phoneNo').invalid" class="error">
+            <div>mobile number is not valid</div>
+        </div>
+        <label>Address</label><br>
+
+        <textarea cols="36" formControlName="address" name="address"></textarea><br><br>
+        <div *ngIf="submitted &&  addForm.get('address').invalid" class="error">
+            <div>address number is not valid</div>
+        </div>
+
+        <label>AadharCard-Number</label><br>
+        <input type="number" size="35" formControlName="adhaarNo" name="adhaarNo"><br><br>
+        <div *ngIf="submitted &&  addForm.get('adhaarNo').invalid" class="error">
+            <div>adhaar number is not valid</div>
+        </div>
+
+        <label>PanCard-Number</label><br>
+        <input type="text" size="35" formControlName="panNo" name="panNo"><br><br>
+
+        <div *ngIf="submitted &&  addForm.get('panNo').invalid" class="error">
+            <div>pan number is not valid</div>
+        </div>
+
+        <label>Age</label><br>
+        <input type="number" size="35" formControlName="age" name="age"><br><br>
+
+        <div *ngIf="submitted &&  addForm.get('age').invalid" class="error">
+            <div>pan number is not valid</div>
+        </div>
+
+        <label>Nationality</label><br>
+        <input type="text" size="15" formControlName="nationality" name="nationality"><br><br>
+        <div *ngIf="submitted &&  addForm.get('nationality').invalid" class="error">
+            <div> Nationality is not valid</div>
+        </div>
+
+
+        <button class="button">Submit Details</button>
+    </form>
+</div>
