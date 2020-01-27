@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
   <div class="container">
     <img src="assets/photos/logo.png" alt="" height="40px" weight="20px" />
-    <a class="navbar-brand" routerLink="/" routerLinkActive="active"
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active"
       >Home-Loan</a
     >
 
@@ -27,6 +27,9 @@
           <a class="nav-link" href="#">Calculator</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" routerLink="/auth" routerLinkActive="active">Register</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
             >Call-Back</a
           >
@@ -40,7 +43,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="logout()">LogOut</a>
+          <a class="nav-link" (click)="logout()">{{authService.isLoggedIn?"logout":"login"}}</a>
         </li>
 
         <li class="nav-item">

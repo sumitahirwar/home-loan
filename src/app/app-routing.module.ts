@@ -12,8 +12,9 @@ import { ApplicationTrackerComponent } from './application-tracker/application-t
 import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
-  {path: '', component: AuthComponent},
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
+  {path:'home',component:HomeComponent},
+  {path: 'auth', component: AuthComponent},
   {path: 'login', component: LoginComponent},
   {path: 'about', component: AboutUsComponent},
   {path: 'register', component: RegisterComponent},
