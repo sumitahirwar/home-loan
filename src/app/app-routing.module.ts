@@ -10,6 +10,13 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ApplicationTrackerComponent } from './application-tracker/application-tracker.component';
 import { AuthComponent } from './auth/auth.component';
+import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
+import { FaqComponent } from './faq/faq.component';
+
+import { EmicalculatorComponent } from './emicalculator/emicalculator.component';
+import { CheckEligibilityComponent } from './check-eligibility/check-eligibility.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,7 +27,13 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path:'upload-documents',component:UploadDocumentsComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'application-tracker',component:ApplicationTrackerComponent}
+  {path:'application-tracker',component:ApplicationTrackerComponent},
+  {path:'apply-loan',component:ApplyLoanComponent},
+  {path:'faq',component:FaqComponent},
+  {path:'emicalucaltor',component:EmicalculatorComponent},
+  {path:'check-eligibility',component:CheckEligibilityComponent},
+  {path:'admin',component:AdminComponent}
+  
 ];
 
 @NgModule({

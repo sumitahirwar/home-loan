@@ -1,0 +1,48 @@
+<br><br><br>
+<div class=" container row">
+  <div class=" container jumbotron alert alert-success col-md-offset-3 col-md-6">
+    <h2>EMI Calculator</h2>
+  </div>
+</div>
+<div class="container row">
+  <div class="container col-md-offset-3 col-md-6">
+    <div class="form">
+      <div class="form-group">
+        <label>Principal Amount</label>
+        <input type="number" placeholder="0" class="form-control" [(ngModel)]="principal">
+      </div>
+
+      <div class="form-group">
+        <label>Rate</label>
+        <input type="number" placeholder="0" class="form-control" [(ngModel)]="rate">
+      </div>
+
+      <div class="form-group">
+        <label>Time (In Years)</label>
+        <input type="number" placeholder="0" class="form-control" [(ngModel)]="time">
+      </div>
+
+      <div class="form-group">
+        <input type="submit" placeholder="0" class="form-control btn btn-primary" value="Calculate"
+          (click)="simpleInterest()">
+      </div>
+
+      <div class="form-group">
+        <label>Simple Interest</label>
+        <input type="number" placeholder="0" class="form-control" disabled [(ngModel)]="si">
+      </div>
+
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container row">
+  <div class="container col-md-6 col-md-offset-3">
+    <h4>
+      Amount = {{amt | currency:'INR' }}
+    </h4>
+    <h4>Monthly EMI={{mon}}</h4>
+
+  </div>
+</div>

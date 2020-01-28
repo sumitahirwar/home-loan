@@ -19,6 +19,12 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ApplicationTrackerComponent } from './application-tracker/application-tracker.component';
 import { AuthComponent } from './auth/auth.component';
+import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
+import { FaqComponent } from './faq/faq.component';
+import { EmicalculatorComponent } from './emicalculator/emicalculator.component';
+import { CheckEligibilityComponent } from './check-eligibility/check-eligibility.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 @NgModule({
   declarations: [
@@ -31,10 +37,14 @@ import { AuthComponent } from './auth/auth.component';
     UploadDocumentsComponent,
     ContactUsComponent,
     FooterComponent,
-    
     ApplicationTrackerComponent,
-    
-    AuthComponent
+    AuthComponent,
+    ApplyLoanComponent,
+    FaqComponent,
+    EmicalculatorComponent,
+    CheckEligibilityComponent,
+    AdminComponent,
+   
   ],
   imports: [
     BrowserModule,
