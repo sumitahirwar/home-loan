@@ -16,6 +16,7 @@ import { FaqComponent } from './faq/faq.component';
 import { EmicalculatorComponent } from './emicalculator/emicalculator.component';
 import { CheckEligibilityComponent } from './check-eligibility/check-eligibility.component';
 import { AdminComponent } from './admin/admin.component';
+import { IncomeDetailsComponent } from './income-details/income-details.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path:'faq',component:FaqComponent},
   {path:'emicalucaltor',component:EmicalculatorComponent},
   {path:'check-eligibility',component:CheckEligibilityComponent},
-  {path:'admin',component:AdminComponent}
+  {path:'admin',component:AdminComponent},
+  {path:'income-details',component:IncomeDetailsComponent},
   
 ];
 

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     /**for testing purpose hardcoded */
     if (this.emailId === "test@test.com" && this.password === "test") {
       localStorage.setItem("isLoggedIn", "true");
-      this.router.navigate(["/home"]);
+      this.router.navigate(["/apply-loan"]);
       this.authService.isLoggedIn = true;
     }
 
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
       /** below line to store the user log data and to redirect to home page */
       localStorage.setItem("isLoggedIn", "true");
       this.result = data;
-      this.router.navigate(["/home"]);
+      this.router.navigate(["/apply-loan"]);
       this.authService.isLoggedIn = true;
     });
   }

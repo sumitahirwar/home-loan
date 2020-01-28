@@ -24,6 +24,7 @@ import { FaqComponent } from './faq/faq.component';
 import { EmicalculatorComponent } from './emicalculator/emicalculator.component';
 import { CheckEligibilityComponent } from './check-eligibility/check-eligibility.component';
 import { AdminComponent } from './admin/admin.component';
+import { IncomeDetailsComponent } from './income-details/income-details.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { AdminComponent } from './admin/admin.component';
     EmicalculatorComponent,
     CheckEligibilityComponent,
     AdminComponent,
+    IncomeDetailsComponent,
    
   ],
   imports: [

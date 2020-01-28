@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, NavigationStart } from "@angular/router";
 import { AuthService } from "../services/auth.service";
 
 @Component({
@@ -9,17 +9,20 @@ import { AuthService } from "../services/auth.service";
 })
 export class NavBarComponent implements OnInit {
   constructor(private router: Router, private authService: AuthService) {}
-  login: boolean = true;
-  ngOnInit() {}
-
-  toggleLogin() {
-    this.login = !this.login;
+  login: boolean = false;
+  ngOnInit() {
+    this.router.events.subscribe(e => {
+      if(e instanceof NavigationStart) {
+        this.login = e.url !== '/login';
+      }
+    });
   }
 
+
   logout() {
-    if(!this.authService.isLoggedIn ){
+    if (!this.authService.isLoggedIn) {
       this.router.navigate(["/login"]);
-      return ;
+      return;
     }
 
     localStorage.clear();

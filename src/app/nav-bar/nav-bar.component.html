@@ -26,7 +26,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Calculator</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="login">
           <a class="nav-link" routerLink="/auth" routerLinkActive="active">Register</a>
         </li>
         <li class="nav-item">
@@ -37,11 +37,11 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/faq" routerLinkActive="active">FAQ</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#myModal"
             >Upload Documents</a
           >
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" (click)="logout()">{{authService.isLoggedIn?"logout":"login"}}</a>
         </li>

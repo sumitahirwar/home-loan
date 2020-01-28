@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-apply-loan',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplyLoanComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) {
+   }
 
   ngOnInit() {
   }
 
+  applyNow() {
+    this.router.navigate(['/income-details'])
+  }
 }
